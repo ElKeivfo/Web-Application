@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=”utf-8”/>
+<title>Quiz</title>
+<h1>
+		<font color="gold"><u>Women In Computer Science</u></font>
+</h1>
+</head>
+
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  background-color: #f6f6f6;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: silver;
+}
+</style>
+<body>
+
+	<style>
+		body {
+			background-color: silver;
+			font-family: "Comic Sans MS", "Comic Sans", cursive;
+			text-align: center;
+		}
+	</style>
+<p><br><p>
+
+
+<ul>
+	<li><a href="file:///C:/Users/Ksund/OneDrive/Documents/new_file/women%20in%20computer%20science.html" title = "Home Sweet Home">Home</a></li>
+	<li><a href="file:///C:/Users/Ksund/OneDrive/Documents/new_file/Grace%20Hopper.html" title = "Grace Hopper">Grace Hopper</a></li>
+	<li><a href="file:///C:/Users/Ksund/OneDrive/Documents/new_file/Karen%20Sp%C3%A4rck%20Jones.html"title = "Karen Spr&auml;ck Jones">Karen Spr&auml;ck Jones</a></li>
+	<li><a href="file:///C:/Users/Ksund/OneDrive/Documents/new_file/ada_lovelace.html"title = "Ada Lovelace">Ada Lovelace</a></li>
+	<li><a href="file:///C:/Users/Ksund/OneDrive/Documents/new_file/joan.html"title = "Joan Clarke">Joan Clarke</a></li>
+	<li><a href="file:///C:/Users/Ksund/OneDrive/Documents/new_file/quiz.html" title = "Are you ready for the quiz?">Quiz</a></li>
+</ul>
+
+
+
+
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+
+<form action="cgi-bin/quiz_result.py" method="POST">
+
+
+<fieldset>
+<label>What is the programming language named after Ada Lovelace?</label><br/>
+<input type="radio" name="q1" id="lovelace"
+value="lovelace" checked="checked"/>
+Lovelace <br >
+<input type="radio" name="q1" id="ada"
+value="ada"/>Ada<br>
+<input type="radio" name="q1" id="byron"
+value="byron"/>Byron<br >
+</fieldset>
+<fieldset>
+<label>Which machine did Charles Babbage show Ada Lovelace?</label><br/>
+<input type="radio" name="q2" id="difference"
+value="difference" checked="checked"/>
+Difference Engine <br >
+<input type="radio" name="q2" id="analytical"
+value="analytical"/>Analytical Engine<br>
+<input type="radio" name="q2" id="eniac"
+value="eniac"/>ENIAC<br >
+</fieldset>
+<fieldset>
+<label>When was the Analytical Engine built?</label><br >
+<input type="radio" name="q3" id="1802"
+value="1802" checked="1802"/>1802<br >
+<input type="radio" name="q3" id="1972"
+value="1972"/>1972<br>
+<input type="radio" name="q3" id="2002"
+value="2002"/>2002<br >
+</fieldset>
+<fieldset>
+<label for="q4">Why is Ada Lovelace famous today?</label>
+<input type="text" id="q4"
+ name="q4"/> <br/>
+</fieldset>
+<fieldset>
+<label for="q5"> Ada Lovelace's father is ... </label>
+<select name="q5" id="q5">
+<option value="unselected"> UNSELECTED</option>
+<option value="babbage">Charles Babbage</option>
+<option value="morgan">De Morgan</option>
+<option value="byron">Lord Byron</option>
+<option value="lovelace">Earl of Lovelace</option>
+</select>
+<label for="q6"> and he was a notorious ... </label>
+<select name="q6" id="q6">
+<option value="unselected"> UNSELECTED</option>
+<option value="thief"> thief.</option>
+<option value="poet"> poet.</option>
+<option value="carpinter"> carpinter.</option>
+<option value="general"> general in the army.</option>
+</select>
+</fieldset>
+<fieldset>
+<label>When did Joan Clarke join Bletchley Park?</label><br >
+<input type="radio" name="q7" id="1939"
+value="1939" checked="checked"/>
+1939 <br >
+<input type="radio" name="q7" id="1940"
+value="1940"/>1940<br>
+<input type="radio" name="q7" id="never"
+value="never"/>She never joined Bletchley Park<br >
+</fieldset>
+<fieldset>
+<label>Who recruited Joan Clarke?</label><br >
+<input type="radio" name="q8" id="turing"
+value="turing" checked="checked"/>
+Alan Turing <br >
+<input type="radio" name="q8" id="murray"
+value="murray"/> Lieutenant-Colonel John Kenneth Ronald Murray<br>
+<input type="radio" name="q8" id="welchmann"
+value="welchmann"/>Gordon Welchmann<br >
+</fieldset>
+<fieldset>
+<label for="q9">Where did Joan Clarke work after the war? </label><br>
+<input type="text" id="q9"
+name="q9"/> <br/>
+</fieldset>
+<fieldset>
+<label for="q10"> She was engaged to Alan Turing</label><br>
+<select  name="q10" id="q10">
+<option value = "unselected"> UNSELECTED
+</option>
+<option value = "true"> True
+</option>
+<option value = "false"> False
+</option>
+</select>
+</fieldset>
+<fieldset>
+<label>As a child, what was Grace Hopper described as? </label><br >
+<input type="radio" name="q11" id="curious"
+value="curious" checked="checked"/>
+Curious<br >
+<input type="radio" name="q11" id="naughty"
+value="naughty"/> Naughty<br>
+<input type="radio" name="q11" id="bright"
+value="bright"/>Bright<br>
+</fieldset>
+<fieldset>
+<label for="q12"> What university did Hopper graduate from?</label><br>
+<select name="q12" id="q12">
+<option value = "unselected"> UNSELECTED
+</option>
+<option value = "huddersfied"> Huddersfield
+</option>
+<option value = "berkley"> Berkley
+</option>
+<option value = "vassar"> Vassar
+</option>
+<option value = "harvard"> Harvard
+</option>
+</select>
+</fieldset>
+<fieldset>
+<label>What term did Hopper invent?</label><br >
+<input type="radio" name="q13" id="bug"
+value="bug" checked="checked"/> Bug<br >
+<input type="radio" name="q13" id="radio"
+value="radio"/> Radio<br>
+<input type="radio" name="q13" id="cobol"
+value="cobol"/> COBOL<br >
+</fieldset>
+<fieldset>
+<label for="q14">Why was Hopper's idea of inventing a new programming language in English, rejected? </label><br>
+<input type="text" id="q14"
+name="q14"/> <br/>
+</fieldset>
+<fieldset>
+<label>Which programming language did Hopper invent?</label><br >
+<input type="radio" name="q15" id="python"
+value="python" checked="checked"/> Python<br >
+<input type="radio" name="q15" id="c++"
+value="c++"/> C++<br>
+<input type="radio" name="q15" id="cobol"
+value="cobol"/> COBOL<br >
+</fieldset>
+<fieldset>
+<label>What is FLOW-MATIC and MATH-MATIC?</label><br >
+<input type="radio" name="q16" id="compiler"
+value="compiler" checked="checked"/> Compiler based programming languages<br >
+<input type="radio" name="q16" id="interpreter"
+value="interpreter"/> Interprter based programming languages<br>
+<input type="radio" name="q16" id="calculator"
+value="calculator"/> Calculator<br >
+</fieldset>
+<fieldset>
+<label>What did Karen Spr&auml;ck Jones do when working at Cambridge?</label><br >
+<input type="radio" name="q17" id="teach"
+value="teach" checked="checked"/>Taught history<br >
+<input type="radio" name="q17" id="processing"
+value="processing"/> Natural language processing and information retrieval<br>
+<input type="radio" name="q17" id="mark"
+value="mark"/> Mark work<br >
+</fieldset>
+<label>What was Karen Spr&auml;ck Jones main research interest?</label><br >
+<input type="radio" name="q18" id="crypt"
+value="crypt" checked="checked"/> Cryptography<br >
+<input type="radio" name="q18" id="nlp"
+value="nlp"/> Natural language processing and information retrieval<br>
+<input type="radio" name="q18" id="knitting"
+value="knitting"/> Knitting<br >
+</fieldset>
+
+
+
+
+
+
+
+
+
+<input type="submit" value="submit">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
+</body>
+</html>

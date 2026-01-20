@@ -1,0 +1,58 @@
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 10%;
+  background-color: #f6f6f6;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 12px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: silver;
+}
+
+table, th, td {
+  border: 1px solid black; margin-left:350px;
+}
+
+p {
+  min-width: 75em
+}
+
+
+		body {
+			background-color: silver;
+			font-family: "Comic Sans MS", "Comic Sans", cursive;
+			text-align:center;
+      min-width: 75em;
+		}
+
+  h2 {
+      font-size: 100px;
+    }
+
+
+h3 {
+        text-align:right;
+      }
+
+
+  p {
+      font-size: 14px;
+      width:200px;
+      padding-left:150px;
+      padding-right:100px;
+      text-align:right;
+
+    }
